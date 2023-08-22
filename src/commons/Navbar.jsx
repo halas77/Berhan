@@ -16,9 +16,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-      <img src={logo} alt="Logo Image" className="md:w-14 w-12 h-10 mx-4 rounded-md" />
-      <h1 className="w-full text-3xl font-bold text-[#f6ba00] font-mono">
+    <div className="flex justify-between items-center h-24 max-w-[1260px] mx-auto px-4 text-white">
+      <img src={logo} alt="Logo Image" className="md:w-16 w-12 h-10 mx-4 rounded-md" />
+      <h1 className="w-full text-3xl font-bold text-white font-mono mt-3">
         Berhan
       </h1>
 
@@ -30,6 +30,10 @@ const Navbar = () => {
         ))}
       </ul>
 
+      <button className="hidden md:flex w-[200px] rounded-md font-bold my-10 mx-auto py-3 text-[#ebb000] pl-3">
+            Sign Up / Sign In
+      </button>
+
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
@@ -37,11 +41,11 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[50%] h-full border-r border-gray-600 bg-gray-800 ease-in-out duration-500"
+            ? "fixed left-0 top-0 w-[60%] h-full border-r border-gray-600 bg-gray-800 ease-in-out duration-500"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
-        <h1 className="w-full text-3xl font-bold text-[#f6ba00] font-mono p-4">
+        <h1 className="w-full text-3xl font-bold text-[#ebb000] font-mono p-4">
           Berhan
         </h1>
         <ul className="p-4">

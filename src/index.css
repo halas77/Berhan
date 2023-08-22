@@ -3,5 +3,12 @@
 @tailwind utilities;
 
 body{
-  background-color: #000316;
+  background-color: #000300;
+}
+
+.hero-container {
+  background-image: url("./assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
