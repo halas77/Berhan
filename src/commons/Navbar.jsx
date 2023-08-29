@@ -17,10 +17,13 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1260px] mx-auto px-4 text-white">
-      
-      <img src={logo} alt="Logo Image" className="md:w-16 w-12 h-10 mx-4 rounded-md" />
+      <img
+        src={logo}
+        alt="Logo Image"
+        className="md:w-16 w-12 h-10 mx-4 rounded-md"
+      />
       <h1 className="w-full text-3xl font-bold text-white font-mono mt-3">
-        <a href="/"> Berhan </a> 
+        <a href="/"> Berhan </a>
       </h1>
 
       <ul className="hidden md:flex">
@@ -30,10 +33,12 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
-      <button className="hidden md:flex w-[200px] rounded-md font-bold my-10 mx-auto py-3 text-[#ebb000] pl-3">
-            Sign Up / Sign In
-      </button>
+      <a href="/signin">
+        {" "}
+        <button className="hidden md:flex w-[200px] rounded-md font-bold my-10 mx-auto py-3 text-[#ebb000] pl-3">
+          Sign Up / Sign In
+        </button>
+      </a>
 
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}

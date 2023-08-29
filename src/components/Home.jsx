@@ -28,7 +28,7 @@ const Home = () => {
             empowering learning for a brighter future.
           </p>
           <button className="bg-black w-[200px] border border-[#ebb000] hover:bg-[#ebb000] hover:text-black hover:duration-500 rounded-md font-bold my-10 mx-auto py-3 text-[#ebb000]">
-            Get Started
+            <a href="/signin"> Get Started </a> 
           </button>
         </div>
       </div>
